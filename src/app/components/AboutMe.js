@@ -19,7 +19,7 @@ export const AboutMe = () => {
             As a recent graduate in software engineering, I bring a year of
             experience to my role, focusing on UX/UI design and front-end
             development. My expertise lies in creating user-centered designs for
-            VAS service companies and digital solutions. During this time, I've
+            VAS service companies and digital solutions. During this time, I&apos;ve
             collaborated on various projects within the digital realm, gaining
             valuable insights and honing my skills in crafting intuitive
             interfaces for enhanced user experiences.

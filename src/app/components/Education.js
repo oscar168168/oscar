@@ -42,13 +42,16 @@ export const Education = () => {
       <div className="grid lg:grid-cols-2 gap-20">
         {school.map((school) => (
           <div>
-            <p className="text-xs lg:text-sm text-gray-400 bg-gray-100 w-fit rounded-full py-1 px-3">
+            <p  key={school.date} className="text-xs lg:text-sm text-gray-400 bg-gray-100 w-fit rounded-full py-1 px-3">
               {school.date}
             </p>{" "}
             <div className="py-4">
               <Image src={school.image} alt="" width={200} height={200} />
             </div>
-            <h3 className="text-xl lg:text-4xl font-medium text-gray-800 ">
+            <h3
+             
+              className="text-xl lg:text-4xl font-medium text-gray-800 "
+            >
               {school.subject}
             </h3>
             <p className="text-sm lg:text-lg text-gray-500 lg:mt-2 mt-1">

@@ -35,7 +35,7 @@ export const Experience = () => {
       </div>
       <div className="grid lg:grid-cols-3 gap-12">
         {careers.map((career) => (
-          <div>
+          <div key={career.subject}>
             
             <h3 className="text-xl lg:text-4xl font-medium text-gray-800 ">
               {career.subject}

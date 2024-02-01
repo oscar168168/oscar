@@ -24,12 +24,13 @@ export const Portfolio = () => {
           <div>
             <div className="flex lg:justify-center lg:items-center py-4">
             <Image
+            key={project.image}
               src={project.image}
               width={600}
               height={600}
               alt="portfolio"
             /></div>
-            <h3 className="text-lg lg:text-2xl font-semibold text-gray-800 lg:text-center my-3 lg:my-6">
+            <h3  className="text-lg lg:text-2xl font-semibold text-gray-800 lg:text-center my-3 lg:my-6">
               {project.title}
             </h3>
             <p className="text-sm lg:text-lg text-gray-500 lg:text-center lg:mt-2 mt-1">

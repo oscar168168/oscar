@@ -22,7 +22,7 @@ export const HeroContent = () => {
       <div className="flex flex-col lg:flex-row lg:items-center justify-start  lg:justify-between">
         {" "}
         <h2 className="text-zinc-800 text-lg lg:text-2xl font-light mb-4  lg:w-3/5">
-          I’m Raksmey A UX/UI Designer. I specialize in crafting intuitive and
+          I&apos;m Raksmey A UX/UI Designer. I specialize in crafting intuitive and
           visually appealing user experiences through UX/UI design.
         </h2>
         <div className="gap-4 flex lg:flex-col">
