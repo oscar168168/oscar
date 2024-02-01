@@ -26,17 +26,17 @@ export const HeroContent = () => {
           visually appealing user experiences through UX/UI design.
         </h2>
         <div className="gap-4 flex lg:flex-col">
-          <Link href="/">
+          <Link target="_blank" href="https://www.behance.net/raksmeyrat">
             <p className="text-gray-900 p-2">
               <PiBehanceLogo size={24} />
             </p>
           </Link>
-          <Link href="/">
+          <Link target="_blank" href="https://www.linkedin.com/in/rat-raksmey-9abb36281/">
             <p className="text-gray-900 p-2">
               <PiFacebookLogo size={24} />
             </p>
           </Link>
-          <Link href="/">
+          <Link target="_blank" href="https://www.facebook.com/doublepainz">
             <p className="text-gray-900 p-2">
               <PiLinkedinLogo size={24} />
             </p>

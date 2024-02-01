@@ -5,14 +5,19 @@ import { Education } from "./components/Education";
 import { Experience } from "./components/Experience";
 import { Portfolio } from "./components/Portfolio";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
-    <main id="hero" className="min-h-screen flex flex-col lg:justify-center  items-between">
+    <main
+      id="hero"
+      className="min-h-screen flex flex-col lg:justify-center  items-between"
+    >
       <Header />
       <div className=" p-3 lg:p-24">
         <div>
-        <HeroSection /></div>
+          <HeroSection />
+        </div>
         <div id="aboutme" className="lg:py-10">
           <AboutMe />
         </div>
@@ -26,6 +31,7 @@ export default function Home() {
           <Portfolio />
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
