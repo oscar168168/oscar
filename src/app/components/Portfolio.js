@@ -12,7 +12,7 @@ const projects = [
 export const Portfolio = () => {
   return (
     <div className="lg:min-h-screen text-gray-800 mt-10 lg:mt-0 w-100  py-4 lg:py-10">
-      <div className="mb-8 lg:mb-10 text-center">
+      <div className="mb-8 lg:mb-20 lg:text-center">
         <span className="text-lg lg:text-3xl text-gray-800">Showcasing</span>
         <h1 className="text-4xl lg:text-7xl text-medium text-orange-400 lg:mt-4">
           My Professional Journey and Achievements

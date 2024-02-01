@@ -5,19 +5,19 @@ const careers = [
   {
     subject: "UX/UI Designer",
     desc: "Recent software development graduate from Norton University, skilled in programming and eager to contribute expertise.",
-    date: "2020 - Present",
+    date: "2023/Nov - Present",
     company: "Prometeus KC"
   },
   {
     subject: "IT Technicain",
     desc: "Completed Future-Bit UX/UI Design course, gained practical skills, ready to contribute creatively to user-friendly digital experiences.",
-    date: "2020 - Present",
+    date: "2022/May - 2023/Nov",
     company: "Mytech Mobility"
   },
   {
     subject: "Teacher Assistant",
     desc: "Completed Future-Bit UX/UI Design course, gained practical skills, ready to contribute creatively to user-friendly digital experiences.",
-    date: "2020 - Present",
+    date: "2020/Oct - 2021/Dec",
     company: "DK Schoolhouse"
   },
 ];
