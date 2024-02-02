@@ -26,15 +26,16 @@ export const Portfolio = () => {
             <div key={project.title}>
               <div className="py-4">
                 <div className="flex lg:justify-center lg:items-center gap-4">
-                  <Image
-                    src={project.image1}
-                    width={600}
-                    height={600}
-                    alt="portfolio"
-                  />
-
+                  <Link target="_blank" href="https://www.prometeus-kc.com/">
+                    <Image
+                      src={project.image1}
+                      width={600}
+                      height={600}
+                      alt="portfolio"
+                    />
+                  </Link>
                   <div className="flex lg:justify-center lg:items-center gap-4">
-                    <Link href="">
+                    <Link target="_blank" href="https://www.prometeus-kc.com/">
                       <Image
                         src={project.image2}
                         width={180}
