@@ -15,12 +15,12 @@ export const Footer = () => {
         </div>
         <div>
           <p className="text-gray-600 text-sm lg:text-base justify-center items-center flex flex-row gap-6">
-            <Link href="/">
-              LI
-            </Link> <span>/</span> <Link href="/">
-              BE
-            </Link><span>/</span><Link href="/">
-              FB
+            <Link href="https://www.linkedin.com/in/rat-raksmey-9abb36281/">
+              LI.
+            </Link> <span>/</span> <Link href="https://www.behance.net/raksmeyrat">
+              BE.
+            </Link><span>/</span><Link href="https://www.facebook.com/doublepainz">
+              FB.
             </Link>
           </p>
         </div>˝
