@@ -3,7 +3,8 @@ import React from "react";
 
 const projects = [
   {
-    image: "/images/portfolio1.png",
+    image1: "/images/portfolio1.png",
+    image2: "/images/portfolio2.png",
     title: "Company Landing Website - Prometeus KC",
     desc: "Explore Prometeus KC's dynamic landing site, showcasing innovative solutions, expertise, and a commitment to excellence in every aspect.",
   },
@@ -22,11 +23,17 @@ export const Portfolio = () => {
         <div className="grid lg:grid-cols-1 gap-12">
           {projects.map((project) => (
             <div key={project.title}>
-              <div className="flex lg:justify-center lg:items-center py-4">
+              <div className="flex lg:justify-center lg:items-center  gap-3 lg:gap-6 py-4">
                 <Image
-                  src={project.image}
+                  src={project.image1}
                   width={600}
                   height={600}
+                  alt="portfolio"
+                />
+                <Image
+                  src={project.image2}
+                  width={180}
+                  height={180}
                   alt="portfolio"
                 />
               </div>
