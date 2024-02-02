@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const projects = [
@@ -33,12 +34,14 @@ export const Portfolio = () => {
                   />
 
                   <div className="flex lg:justify-center lg:items-center gap-4">
-                    <Image
-                      src={project.image2}
-                      width={180}
-                      height={180}
-                      alt="portfolio"
-                    />
+                    <Link href="">
+                      <Image
+                        src={project.image2}
+                        width={180}
+                        height={180}
+                        alt="portfolio"
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>
