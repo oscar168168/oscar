@@ -23,19 +23,24 @@ export const Portfolio = () => {
         <div className="grid lg:grid-cols-1 gap-12">
           {projects.map((project) => (
             <div key={project.title}>
-              <div className="flex lg:justify-center lg:items-center  gap-3 lg:gap-6 py-4">
-                <Image
-                  src={project.image1}
-                  width={600}
-                  height={600}
-                  alt="portfolio"
-                />
-                <Image
-                  src={project.image2}
-                  width={180}
-                  height={180}
-                  alt="portfolio"
-                />
+              <div className="py-4">
+                <div className="flex lg:justify-center lg:items-center gap-4">
+                  <Image
+                    src={project.image1}
+                    width={600}
+                    height={600}
+                    alt="portfolio"
+                  />
+
+                  <div className="flex lg:justify-center lg:items-center gap-4">
+                    <Image
+                      src={project.image2}
+                      width={180}
+                      height={180}
+                      alt="portfolio"
+                    />
+                  </div>
+                </div>
               </div>
               <h3 className="text-lg lg:text-2xl font-semibold text-gray-800 lg:text-center my-3 lg:my-6">
                 {project.title}
