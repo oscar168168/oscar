@@ -30,7 +30,7 @@ const school = [
 
 export const Education = () => {
   return (
-    <div className="lg:min-h-screen text-gray-800 mt-20 lg:mt-0 w-100  py-4 lg:py-20">
+    <div className="lg:min-h-screen text-gray-800 mt-20 lg:mt-0 w-100  py-10 lg:py-20">
       <div className="mb-8 lg:mb-20">
         <span className="text-lg lg:text-3xl text-gray-800">
           Learn More About Me

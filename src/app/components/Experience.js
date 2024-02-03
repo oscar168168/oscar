@@ -24,7 +24,7 @@ const careers = [
 
 export const Experience = () => {
   return (
-    <div className="lg:-min-h-80 text-gray-800 mt-20 lg:mt-0 w-100  py-4 lg:py-20">
+    <div className="lg:-min-h-80 text-gray-800 mt-20 lg:mt-0 w-100  py-10 lg:py-20">
       <div className="mb-8 lg:mb-10">
         <span className="text-lg lg:text-3xl text-gray-800">
         Explore My

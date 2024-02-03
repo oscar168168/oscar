@@ -4,7 +4,7 @@ import React from "react";
 
 export const AboutMe = () => {
   return (
-    <div className="lg:h-screen mt-20 lg:mt-0 w-100 flex py-4 lg:py-20 flex-col lg:flex-row gap-8 lg:gap-4 lg:justify-between items-start">
+    <div className="lg:h-screen mt-20 lg:mt-0 w-100 flex py-10 lg:py-20 flex-col lg:flex-row gap-8 lg:gap-4 lg:justify-between items-start">
       <div className="lg:basis-1/2 lg:sticky top-28">
         <span className="text-lg lg:text-3xl text-gray-800">
           Learn More About Me
