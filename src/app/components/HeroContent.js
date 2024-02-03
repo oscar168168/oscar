@@ -15,7 +15,7 @@ export const HeroContent = () => {
           className="rounded-full border-orange-100 transition duration-300 hover:border-orange-300 border-8"
         />
       </div> */}
-      <h1 className="text-zinc-800 text-5xl lg:text-8xl font-normal mb-6 lg:mb-12">
+      <h1 className="text-zinc-800 text-5xl lg:text-8xl font-medium mb-6 lg:mb-12">
         Pixels with Purpose,{" "}
         <span className="text-orange-400">Designs that Resonate.</span>
       </h1>

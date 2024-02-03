@@ -16,7 +16,7 @@ export const Portfolio = () => {
     <div className="lg:min-h-screen text-gray-800 my-10 lg:my-0 w-100  pt-24">
       <div className="mb-8 lg:mb-20 lg:text-center">
         <span className="text-lg lg:text-3xl text-gray-800">Showcasing</span>
-        <h1 className="text-4xl lg:text-7xl text-medium text-orange-400 lg:mt-4">
+        <h1 className="text-4xl lg:text-7xl text-semibold text-orange-400 lg:mt-4">
           My Professional Journey and Achievements
         </h1>
       </div>
