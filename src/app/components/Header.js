@@ -2,10 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {
-  PiEquals,
-  PiX,
-} from "react-icons/pi";
+import { PiEquals, PiX } from "react-icons/pi";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 
@@ -70,6 +67,7 @@ export const Header = () => {
           <div className="flex items-center justify-between border-b pb-6">
             <Link href="#hero" className="-m-1.5 p-1.5 flex flex-row gap-1">
               <Image
+                onClick={() => setMobileMenuOpen(false)}
                 src="/images/profile.jpeg"
                 alt=""
                 width={48}
