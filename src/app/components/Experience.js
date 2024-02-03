@@ -6,19 +6,22 @@ const careers = [
     subject: "UX/UI Designer",
     desc: "Recent software development graduate from Norton University, skilled in programming and eager to contribute expertise.",
     date: "2023/Nov - Present",
-    company: "Prometeus KC"
+    company: "Prometeus KC",
+    image: "/images/exp1.webp",
   },
   {
     subject: "IT Technicain",
     desc: "Completed Future-Bit UX/UI Design course, gained practical skills, ready to contribute creatively to user-friendly digital experiences.",
     date: "2022/May - 2023/Nov",
-    company: "Mytech Mobility"
+    company: "Mytech Mobility",
+    image: "/images/exp2.webp",
   },
   {
     subject: "Teacher Assistant",
     desc: "Completed Future-Bit UX/UI Design course, gained practical skills, ready to contribute creatively to user-friendly digital experiences.",
     date: "2020/Oct - 2021/Dec",
-    company: "DK Schoolhouse"
+    company: "DK Schoolhouse",
+    image: "/images/exp3.webp",
   },
 ];
 
@@ -35,18 +38,18 @@ export const Experience = () => {
       </div>
       <div className="grid lg:grid-cols-3 gap-12">
         {careers.map((career) => (
-          <div key={career.subject}>
-            
-            <h3 className="text-xl lg:text-4xl font-medium text-gray-800 ">
+          <div className="" key={career.subject}>
+            <Image src={career.image} alt="exp" width={200} height={200} />
+            <h3 className="text-xl lg:text-3xl font-semibold text-gray-800 ">
               {career.subject}
             </h3>
-            <h4 className="text-base lg:text-xl font-medium text-gray-600 py-1">
+            <h4 className="text-base lg:text-xl font-medium text-orange-400 py-1">
               {career.company}
             </h4>{" "}
-            <p className="text-xs lg:text-sm text-orange-400 py-1">
+            <p className="text-sm lg:text-base text-gray-600 py-1">
               {career.date}
             </p>{" "}
-            <p className="text-sm lg:text-lg text-gray-500 lg:mt-2 mt-1">
+            <p className="text-sm lg:text-lg text-gray-500 mt-1">
               {career.desc}
             </p>
           </div>
