@@ -39,7 +39,7 @@ export const Education = () => {
           Education
         </h1>
       </div>
-      <div className="grid lg:grid-cols-2 gap-20">
+      <div className="grid lg:grid-cols-2 gap-10 lg:gap-20">
         {school.map((school) => (
           <div key={school.subject}>
             <p className="text-xs lg:text-sm text-gray-400 bg-gray-100 w-fit rounded-full py-1 px-3">
