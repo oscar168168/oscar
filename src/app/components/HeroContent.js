@@ -31,12 +31,12 @@ export const HeroContent = () => {
               <PiBehanceLogo size={24} />
             </p>
           </Link>
-          <Link target="_blank" href="https://www.linkedin.com/in/rat-raksmey-9abb36281/">
+          <Link target="_blank" href="https://www.facebook.com/doublepainz">
             <p className="text-gray-900 p-2">
               <PiFacebookLogo size={24} />
             </p>
           </Link>
-          <Link target="_blank" href="https://www.facebook.com/doublepainz">
+          <Link target="_blank" href="https://www.linkedin.com/in/rat-raksmey-9abb36281/">
             <p className="text-gray-900 p-2">
               <PiLinkedinLogo size={24} />
             </p>
