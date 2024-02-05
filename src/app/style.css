@@ -1,3 +1,7 @@
 .text-primary{
     @apply text-orange-400;
 }
+html, body {
+    background: url('/images/bg1.png') no-repeat center center fixed;
+    background-size: cover;
+  }

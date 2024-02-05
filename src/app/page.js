@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { HeroSection } from "./components/HeroSection";
-import { AboutMe } from "./components/AboutMe";
-import { Education } from "./components/Education";
-import { Experience } from "./components/Experience";
-import { Portfolio } from "./components/Portfolio";
+import { Hero } from "./sections/Hero";
+import { AboutMe } from "./sections/AboutMe";
+import { Education } from "./sections/Education";
+import { Experience } from "./sections/Experience";
+import { Portfolio } from "./sections/Portfolio";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { HeroSection } from "./components/HeroSection";
 
 export default function Home() {
   return (

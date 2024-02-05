@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { PiBehanceLogo, PiFacebookLogo, PiLinkedinLogo } from "react-icons/pi";
 
-export const HeroContent = () => {
+export const HeroSection = () => {
   return (
-    <div>
+    <div className="lg:min-h-80 mt-20 lg:mt-0 justify-center items-center py-10 lg:py-20">
       <h1 className="text-zinc-800 text-5xl lg:text-8xl font-medium mb-6 lg:mb-12">
         Pixels with Purpose,{" "}
         <span className="text-primary">Designs that Resonate.</span>
