@@ -1,5 +1,6 @@
 import { Inter, Titillium_Web } from "next/font/google";
 import "./globals.css";
+import "./style.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const titillium = Titillium_Web({ subsets: ["latin"], weight: ["200", "300", "400", "600", "700","900"] });

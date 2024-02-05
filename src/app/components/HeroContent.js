@@ -17,7 +17,7 @@ export const HeroContent = () => {
       </div> */}
       <h1 className="text-zinc-800 text-5xl lg:text-8xl font-medium mb-6 lg:mb-12">
         Pixels with Purpose,{" "}
-        <span className="text-orange-400">Designs that Resonate.</span>
+        <span className="text-primary">Designs that Resonate.</span>
       </h1>
       <div className="flex flex-col lg:flex-row lg:items-center justify-start  lg:justify-between">
         {" "}
