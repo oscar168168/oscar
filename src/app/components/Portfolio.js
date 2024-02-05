@@ -9,6 +9,12 @@ const projects = [
     title: "Company Landing Website - Prometeus KC",
     desc: "Explore Prometeus KC's dynamic landing site, showcasing innovative solutions, expertise, and a commitment to excellence in every aspect.",
   },
+  {
+    image1: "/images/portfolio3.png",
+    image2: "/images/portfolio4.png",
+    title: "My Portfolio",
+    desc: "Explore Prometeus KC's dynamic landing site, showcasing innovative solutions, expertise, and a commitment to excellence in every aspect.",
+  },
 ];
 
 export const Portfolio = () => {
