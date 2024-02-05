@@ -15,7 +15,7 @@ const projects = [
     image2: "/images/portfolio4.png",
     href: "https://raksmey-rat-portfolio.vercel.app/",
     title: "My Portfolio",
-    desc: "Explore Prometeus KC's dynamic landing site, showcasing innovative solutions, expertise, and a commitment to excellence in every aspect.",
+    desc: "I developed this portfolio site by using Next.js and Tailwind CSS to showcase my skills and experience, highlighting my projects, skills, and achievements.",
   },
 ];
 
