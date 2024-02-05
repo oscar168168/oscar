@@ -6,12 +6,14 @@ const projects = [
   {
     image1: "/images/portfolio1.png",
     image2: "/images/portfolio2.png",
+    href: "https://www.prometeus-kc.com/",
     title: "Company Landing Website - Prometeus KC",
     desc: "Explore Prometeus KC's dynamic landing site, showcasing innovative solutions, expertise, and a commitment to excellence in every aspect.",
   },
   {
     image1: "/images/portfolio3.png",
     image2: "/images/portfolio4.png",
+    href: "https://raksmey-rat-portfolio.vercel.app/",
     title: "My Portfolio",
     desc: "Explore Prometeus KC's dynamic landing site, showcasing innovative solutions, expertise, and a commitment to excellence in every aspect.",
   },
@@ -29,10 +31,10 @@ export const Portfolio = () => {
       <div className="flex justify-center items-center">
         <div className="grid lg:grid-cols-1 gap-12">
           {projects.map((project) => (
-            <div key={project.title}>
+            <div className="lg:mb-8" key={project.title}>
               <div className="py-4">
                 <div className="flex lg:justify-center lg:items-center gap-4">
-                  <Link target="_blank" href="https://www.prometeus-kc.com/">
+                  <Link target="_blank" href={project.href}>
                     <Image
                       src={project.image1}
                       width={600}
