@@ -26,7 +26,7 @@ export const AboutMe = () => {
         <span className="text-lg lg:text-3xl text-gray-800">
           Learn More About Me
         </span>
-        <h1 className="text-4xl lg:text-7xl text-semibold text-orange-400 lg:mt-4">
+        <h1 className="text-4xl lg:text-7xl font-semibold text-orange-400 lg:mt-4">
           1 Year Experience
         </h1>
 
