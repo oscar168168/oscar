@@ -1,7 +1,17 @@
-.text-primary{
+.text-primary {
     @apply text-orange-400;
 }
-html, body {
+
+html,
+body {
     background: url('/images/bg1.png') no-repeat center center fixed;
-    background-size: contain;
-  }
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        background-size: contain;
+    }
+}
