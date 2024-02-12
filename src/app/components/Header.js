@@ -123,6 +123,7 @@ export const Header = () => {
                 ))}
                 <hr className="border-gray-900/10"></hr>
                 <Link
+                target="_blank"
                   href="https://t.me/doublepainz"
                   className="-mx-3 flex justify-start items-center gap-2  rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-orange-200"
                 >
