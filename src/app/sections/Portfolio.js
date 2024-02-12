@@ -54,10 +54,10 @@ export const Portfolio = () => {
                   </div>
                 </div>
               </div>
-              <h3 className="text-lg lg:text-2xl font-semibold text-gray-800 lg:text-center my-3 lg:my-6">
+              <h3 className="text-lg lg:text-2xl font-semibold text-gray-800 lg:text-center my-3 lg:my-3">
                 {project.title}
               </h3>
-              <p className="text-sm lg:text-lg text-gray-500 lg:text-center lg:mt-2 mt-1">
+              <p className="text-sm lg:text-lg text-gray-500 lg:text-center lg:mt-1 mt-1">
                 {project.desc}
               </p>
             </div>

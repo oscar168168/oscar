@@ -22,7 +22,7 @@ const skills = [
 export const AboutMe = () => {
   return (
     <div className="lg:h-screen mt-20 lg:mt-0 w-100 flex pt-24 flex-col lg:flex-row gap-8 lg:gap-8 lg:justify-between items-start">
-      <div className="lg:basis-1/2 lg:sticky top-28">
+      <div className="lg:basis-1/2">
         <span className="text-lg lg:text-3xl text-gray-800">
           Learn More About Me
         </span>

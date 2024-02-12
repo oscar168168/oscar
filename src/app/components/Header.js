@@ -2,7 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { PiEquals, PiX } from "react-icons/pi";
+import {
+  PiEquals,
+  PiTelegramLogo,
+  PiTelegramLogoBold,
+  PiTelegramLogoFill,
+  PiX,
+} from "react-icons/pi";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 
@@ -18,10 +24,10 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-50">
       <nav
-        className="flex items-center justify-between p-6 lg:px-8 bg-[#fafaff60] border-b backdrop-blur-lg"
+        className="flex items-center justify-between py-4 px-4 lg:px-8 bg-[#fafaff60] border-b backdrop-blur-lg"
         aria-label="Global"
       >
-        <div className="hidden lg:flex lg:gap-x-12 transition duration-200">
+        <div className="hidden lg:flex lg:gap-x-12 justify-center items-center transition duration-200">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -31,6 +37,16 @@ export const Header = () => {
               {item.name}
             </Link>
           ))}
+          <button
+            type="button"
+            className="flex justify-center items-center gap-2 text-sm lg:text-base font-light leading-6 px-2 py-1 lg:px-5 lg:py-2.5 bg-orange-400 rounded-full transition duration-200 hover:bg-orange-500"
+          >
+            {" "}
+            <Link href="https://t.me/doublepainz" className="">
+              Contact
+            </Link>
+            <PiTelegramLogo size={16} />
+          </button>
         </div>
 
         <div className="flex ">
@@ -48,7 +64,7 @@ export const Header = () => {
         <div className="flex lg:hidden">
           <button
             type="button"
-            onClick={() => setMobileMenuOpen(true)}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
             <span className="sr-only">Open main menu</span>
@@ -58,12 +74,18 @@ export const Header = () => {
       </nav>
       <Dialog
         as="div"
-        className="lg:hidden"
+        className={`lg:hidden transition-opacity duration-300 ease-in-out ${
+          mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
         open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
       >
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#fafaff] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel
+          className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#fafaff] px-4 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 transform transition-transform duration-300 ease-in-out ${
+            mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
           <div className="flex items-center justify-between border-b pb-6">
             <Link href="#hero" className="-m-1.5 p-1.5 flex flex-row gap-1">
               <Image
@@ -99,6 +121,13 @@ export const Header = () => {
                     {item.name}
                   </Link>
                 ))}
+                <hr className="border-gray-900/10"></hr>
+                <Link
+                  href="https://t.me/doublepainz"
+                  className="-mx-3 flex justify-start items-center gap-2  rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-orange-200"
+                >
+                  Contact <PiTelegramLogo size={16} />
+                </Link>
               </div>
             </div>
           </div>
