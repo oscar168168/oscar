@@ -4,7 +4,7 @@ import React from "react";
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="py-4 lg:py-10 border-t">
+    <div className="py-4 lg:py-10 border-t bg-[#fafaff]">
         <div className="lg:mb-6">
           <p className="text-gray-500 text-sm lg:text-base text-center">
             Dangkao, Prey sar, Phnom Penh
