@@ -27,7 +27,7 @@ export const Footer = () => {
             </Link>
           </p>
         </div>˝
-      <p className="text-gray-600 text-sm lg:text-base  text-center">
+      <p className="text-gray-600 text-sm lg:text-base font-light  text-center">
         © {currentYear} Rat Raksmey
       </p>
     </div>
