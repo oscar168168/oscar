@@ -1,16 +1,10 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import {
-  PiEquals,
-  PiTelegramLogo,
-  PiTelegramLogoBold,
-  PiTelegramLogoFill,
-  PiX,
-} from "react-icons/pi";
-import { useState } from "react";
+// components/Header.js
+import React, { useState } from "react";
+import { PiEquals, PiTelegramLogo, PiX } from "react-icons/pi";
 import { Dialog } from "@headlessui/react";
+import Link from "next/link";
+import Image from "next/image";
 
 const navigation = [
   { name: "About me", href: "#aboutme" },
@@ -18,6 +12,7 @@ const navigation = [
   { name: "Experience", href: "#experience" },
   { name: "Portfolio", href: "#portfolio" },
 ];
+
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -37,19 +32,20 @@ export const Header = () => {
               {item.name}
             </Link>
           ))}
-          <button
+         
+        </div>
+
+        <div className="flex gap-x-8">
+        <button
             type="button"
-            className="flex justify-center items-center gap-2 text-sm lg:text-base font-light leading-6 px-2 py-1 lg:px-5 lg:py-2.5 bg-orange-400 rounded-full transition duration-200 hover:bg-orange-500"
+            className="lg:flex hidden justify-center items-center gap-2 text-sm lg:text-base font-light leading-6 px-2 py-1 lg:px-5 lg:py-2.5 bg-orange-400 rounded-full transition duration-200 hover:bg-orange-500"
           >
             {" "}
-            <Link href="https://t.me/doublepainz" className="">
+            <Link target="_blank" href="https://t.me/doublepainz" className="">
               Contact
             </Link>
             <PiTelegramLogo size={16} />
           </button>
-        </div>
-
-        <div className="flex ">
           <Link href="#hero" className="-m-1.5 p-1.5 flex flex-row gap-1">
             <Image
               src="/images/profile.jpeg"
@@ -123,7 +119,7 @@ export const Header = () => {
                 ))}
                 <hr className="border-gray-900/10"></hr>
                 <Link
-                target="_blank"
+                  target="_blank"
                   href="https://t.me/doublepainz"
                   className="-mx-3 flex justify-start items-center gap-2  rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-orange-200"
                 >

@@ -5,16 +5,14 @@ import React from "react";
 const projects = [
   {
     image1: "/images/portfolio1.png",
-    image2: "/images/portfolio2.png",
     href: "https://www.prometeus-kc.com/",
     title: "Company Landing Website - Prometeus KC",
     desc: "Explore Prometeus KC's dynamic landing site, showcasing innovative solutions, expertise, and a commitment to excellence in every aspect.",
   },
   {
     image1: "/images/portfolio3.png",
-    image2: "/images/portfolio4.png",
     href: "https://raksmey-rat-portfolio.vercel.app/",
-    title: "My Portfolio",
+    title: "My Web Portfolio",
     desc: "I developed this portfolio site by using Next.js and Tailwind CSS to showcase my skills and experience, highlighting my projects, skills, and achievements.",
   },
 ];
@@ -42,16 +40,6 @@ export const Portfolio = () => {
                       alt="portfolio"
                     />
                   </Link>
-                  <div className="flex lg:justify-center lg:items-center gap-4">
-                    <Link target="_blank" href="https://www.prometeus-kc.com/">
-                      <Image
-                        src={project.image2}
-                        width={180}
-                        height={180}
-                        alt="portfolio"
-                      />
-                    </Link>
-                  </div>
                 </div>
               </div>
               <h3 className="text-lg lg:text-2xl font-semibold text-gray-800 lg:text-center my-3 lg:my-3">
