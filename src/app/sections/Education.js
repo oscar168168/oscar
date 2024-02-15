@@ -16,7 +16,7 @@ const school = [
   },
   {
     image: "/images/instinct.png",
-    subject: "Basic Software Development Short-course",
+    subject: "Software Development Short-course",
     desc: "Completed Instinct Institute's Basic Software Development course, acquired fundamental skills, ready to build on a strong foundation.",
     date: "2022/Mar - 2022/Jun",
   },
