@@ -46,10 +46,10 @@ export const Experience = () => {
             <h4 className="text-base lg:text-xl font-medium text-orange-400 py-1">
               {career.company}
             </h4>{" "}
-            <p className="text-sm lg:text-base text-gray-600 py-1">
+            <p className="text-sm lg:text-base text-gray-800 py-1">
               {career.date}
             </p>{" "}
-            <p className="text-sm lg:text-lg text-gray-500 mt-1">
+            <p className="text-sm lg:text-lg font-light text-gray-600 mt-1">
               {career.desc}
             </p>
           </div>

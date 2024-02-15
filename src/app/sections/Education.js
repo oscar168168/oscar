@@ -51,7 +51,7 @@ export const Education = () => {
             <h3 className="text-xl lg:text-4xl font-medium text-gray-800 ">
               {school.subject}
             </h3>
-            <p className="text-sm lg:text-lg text-gray-500 lg:mt-2 mt-1">
+            <p className="text-sm lg:text-lg text-gray-600 font-light lg:mt-2 mt-1">
               {school.desc}
             </p>
           </div>
