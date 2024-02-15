@@ -6,10 +6,10 @@ export const Footer = () => {
   return (
     <div className="py-4 lg:py-10 border-t bg-[#fafaff]">
         <div className="lg:mb-6">
-          <p className="text-gray-500 text-sm lg:text-base text-center">
+          <p className="text-gray-500 text-sm lg:text-base font-light text-center">
             Dangkao, Prey sar, Phnom Penh
           </p>
-          <p className="text-gray-500 text-sm lg:text-base text-center my-2 lg:my-4">
+          <p className="text-gray-500 text-sm lg:text-base font-light text-center my-2 lg:my-4">
             E: ratraksmey@gmail.com | T: +885 11 259 581
           </p>
         </div>
@@ -27,7 +27,7 @@ export const Footer = () => {
             </Link>
           </p>
         </div>˝
-      <p className="text-gray-500 text-sm lg:text-base text-center">
+      <p className="text-gray-500 text-sm lg:text-base  text-center">
         © {currentYear} Rat Raksmey
       </p>
     </div>
