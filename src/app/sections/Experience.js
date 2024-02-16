@@ -40,13 +40,13 @@ export const Experience = () => {
         {careers.map((career) => (
           <div className="" key={career.subject}>
             <Image src={career.image} alt="exp" width={200} height={200} />
-            <h3 className="text-xl lg:text-3xl font-semibold text-gray-800 ">
+            <h3 className="text-xl lg:text-3xl text-gray-800 ">
               {career.subject}
             </h3>
-            <h4 className="text-base lg:text-xl font-medium text-orange-400 py-1">
+            <h4 className="text-base lg:text-xl text-orange-400 py-1">
               {career.company}
             </h4>{" "}
-            <p className="text-sm lg:text-base text-gray-800 py-1">
+            <p className="text-sm lg:text-lg font-semibold text-gray-800 py-1">
               {career.date}
             </p>{" "}
             <p className="text-sm lg:text-lg font-light text-gray-600 mt-1">

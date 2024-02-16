@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <div className="lg:min-h-80 mt-20 lg:mt-0 flex justify-center items-center py-10 lg:py-20">
       <div>
-      <h1 className="text-zinc-800 text-5xl lg:text-8xl font-medium mb-6 lg:mb-12">
+      <h1 className="text-zinc-800 text-5xl lg:text-8xl mb-6 lg:mb-12">
         Pixels with Purpose,{" "}
         <span className="text-primary">Designs that Resonate.</span>
       </h1>

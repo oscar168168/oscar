@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-50">
       <nav
-        className="flex items-center justify-between py-4 px-4 lg:px-8 bg-[#fafaff60] border-b backdrop-blur-lg"
+        className="flex items-center justify-between py-4 px-4 lg:px-8 bg-[#fafaff60] border-b backdrop-blur"
         aria-label="Global"
       >
         <div className="hidden lg:flex lg:gap-x-12 justify-center items-center transition duration-200">
