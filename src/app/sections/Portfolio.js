@@ -33,7 +33,7 @@ export const Portfolio = () => {
       <div className="lg:flex justify-between">
         <div className="mb-8 lg:mb-20">
           <span className="text-lg lg:text-3xl text-gray-800">Showcasing</span>
-          <h1 className="text-4xl lg:text-7xl font-medium text-primary lg:mt-4">
+          <h1 className="text-4xl lg:text-7xl text-primary lg:mt-4">
             My Professional Journey and Achievements
           </h1>
         </div>
@@ -60,7 +60,7 @@ export const Portfolio = () => {
                   </h3>
                   <Link
                     href="#"
-                    className="p-2 rounded-full bg-orange-400 text-white me-4"
+                    className="p-2 rounded-full bg-orange-400 text-white me-4 hover:rotate-45 transition duration-300"
                   >
                     {" "}
                     <PiArrowUpRight size={16} />

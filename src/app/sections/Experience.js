@@ -32,7 +32,7 @@ export const Experience = () => {
         <span className="text-lg lg:text-3xl text-gray-800">
         Explore My
         </span>
-        <h1 className="text-4xl lg:text-7xl font-medium text-primary lg:mt-4">
+        <h1 className="text-4xl lg:text-7xl text-primary lg:mt-4">
           Experience
         </h1>
       </div>
