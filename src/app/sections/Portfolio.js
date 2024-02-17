@@ -1,7 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { PiArrowArcLeft, PiArrowUpRight } from "react-icons/pi";
+import React, { useState } from "react";
+import { PiArrowUpRight } from "react-icons/pi";
 
 const projects = [
   {
@@ -29,13 +30,13 @@ const projects = [
 
 export const Portfolio = () => {
   return (
-    <div className="lg:min-h-screen text-gray-800 my-10 lg:my-0 w-100  pt-24">
+    <div className="lg:min-h-screen my-10 lg:my-0 w-100  pt-24">
       <div className="lg:flex justify-between">
         <div className="mb-8 lg:mb-20">
-          <span className="text-lg lg:text-3xl text-gray-800">Showcasing</span>
-          <h1 className="text-4xl lg:text-7xl text-primary lg:mt-4">
+          <h5 className="">Showcasing</h5>
+          <h2 className="text-primary lg:mt-4">
             My Professional Journey and Achievements
-          </h1>
+          </h2>
         </div>
         <div className="flex justify-center items-center">
           <div className="grid lg:grid-cols-1 gap-12">
@@ -54,28 +55,29 @@ export const Portfolio = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg lg:text-2xl font-normal text-gray-800 my-3 lg:my-3">
-                    {project.title}
-                  </h3>
+                <div className="flex justify-between items-center my-1.5 lg:my-3">
+                  <h5 className="">{project.title}</h5>
                   <Link
-                    href="#"
-                    className="p-2 rounded-full bg-orange-400 text-white me-4 hover:rotate-45 transition duration-300"
+                    target="_blank"
+                    href={project.href}
+                    className="p-2 rounded-full bg-orange-400 text-white lg:me-5 hover:rotate-45 hover:bg-orange-300 transition duration-300"
                   >
                     {" "}
-                    <PiArrowUpRight size={16} />
+                    <PiArrowUpRight size={20} />
                   </Link>
                 </div>
+
+                <p className="lg:my-4 my-2">{project.desc}</p>
                 <div className="flex lg:gap-6 gap-3 mb-2">
                   {project.specialist.map((specialist, index) => (
-                    <p key={index} className="px-4 py-1.5 bg-gray-100 text-gray-600 text-xs lg:text-sm font-medium rounded-full">
+                    <p
+                      key={index}
+                      className="px-6 py-1 bg-gray-100 lg:text-base font-medium rounded-full"
+                    >
                       {specialist}
                     </p>
                   ))}
                 </div>
-                <p className="text-base lg:text-lg text-gray-500 font-light lg:mt-1 mt-1">
-                  {project.desc}
-                </p>
               </div>
             ))}
           </div>

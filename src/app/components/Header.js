@@ -27,7 +27,7 @@ export const Header = () => {
             <Link
               key={item.name}
               href={item.href}
-              className="text-base font-light leading-6 text-gray-900 transition duration-200 hover:text-orange-400"
+              className="text-base font-light leading-6 text-gray-900 transition duration-300 hover:text-orange-400"
             >
               {item.name}
             </Link>
@@ -38,13 +38,13 @@ export const Header = () => {
         <div className="flex gap-x-8">
         <button
             type="button"
-            className="lg:flex hidden justify-center items-center gap-2 text-sm lg:text-base font-light leading-6 px-2 py-1 lg:px-5 lg:py-2.5 bg-orange-400 rounded-full transition duration-200 hover:bg-orange-500"
+            className="lg:flex hidden justify-center items-center gap-2 text-sm lg:text-base font-light leading-6 px-2 py-1 lg:px-5 lg:py-2.5 bg-orange-400 rounded-full transition duration-300 hover:bg-orange-300"
           >
             {" "}
             <Link target="_blank" href="https://t.me/doublepainz" className="">
               Contact
             </Link>
-            <PiTelegramLogo size={16} />
+            <PiTelegramLogo size={16} className="hover:rotate-45 duration-300" />
           </button>
           <Link href="#hero" className="-m-1.5 p-1.5 flex flex-row gap-1">
             <Image
@@ -78,7 +78,7 @@ export const Header = () => {
       >
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel
-          className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#fafaff] px-4 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 transform transition-transform duration-300 ease-in-out ${
+          className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#fafaff] px-4 py-4 max-w-sm ring-1 ring-gray-900/10 transform transition-transform duration-300 ease-in-out ${
             mobileMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -123,7 +123,7 @@ export const Header = () => {
                   href="https://t.me/doublepainz"
                   className="-mx-3 flex justify-start items-center gap-2  rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-orange-200"
                 >
-                  Contact <PiTelegramLogo size={16} />
+                  Contact <PiTelegramLogo size={16} className="hover:rotate-45 duration-300" />
                 </Link>
               </div>
             </div>

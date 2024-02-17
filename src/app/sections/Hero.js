@@ -7,16 +7,16 @@ export const Hero = () => {
   return (
     <div className="lg:min-h-80 mt-20 lg:mt-0 flex justify-center items-center py-10 lg:py-20">
       <div>
-      <h1 className="text-zinc-800 text-5xl lg:text-8xl mb-6 lg:mb-12">
+      <h1 className="mb-6 lg:mb-12">
         Pixels with Purpose,{" "}
         <span className="text-primary">Designs that Resonate.</span>
       </h1>
       <div className="flex flex-col lg:flex-row lg:items-center justify-start  lg:justify-between">
         {" "}
-        <h2 className="text-zinc-800 text-lg lg:text-2xl font-light mb-4  lg:w-3/5">
+        <h6 className="mb-4  lg:w-3/5">
           I&apos;m Raksmey A UX/UI Designer. I specialize in crafting intuitive and
           visually appealing user experiences through UX/UI design.
-        </h2>
+        </h6>
         <div className="gap-4 flex lg:flex-col">
           <Link target="_blank" href="https://www.behance.net/raksmeyrat">
             <p className="text-gray-900 p-2">

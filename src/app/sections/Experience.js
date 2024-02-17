@@ -27,29 +27,30 @@ const careers = [
 
 export const Experience = () => {
   return (
-    <div className="lg:-min-h-80 text-gray-800 mt-20 lg:mt-0 w-100  pt-24">
+    <div className="lg:-min-h-80 mt-20 lg:mt-0 w-100  pt-24">
       <div className="mb-8 lg:mb-10">
-        <span className="text-lg lg:text-3xl text-gray-800">
+        <h5 className="">
         Explore My
-        </span>
-        <h1 className="text-4xl lg:text-7xl text-primary lg:mt-4">
+        </h5>
+        <h2 className="text-primary lg:mt-4">
           Experience
-        </h1>
+        </h2>
       </div>
       <div className="grid lg:grid-cols-3 gap-12">
         {careers.map((career) => (
-          <div className="" key={career.subject}>
-            <Image src={career.image} alt="exp" width={200} height={200} />
-            <h3 className="text-xl lg:text-3xl text-gray-800 ">
+          <div key={career.subject}>
+            <Image src={career.image} alt="exp" width={250} height={250} />
+            <h5>
               {career.subject}
-            </h3>
-            <h4 className="text-base lg:text-xl text-orange-400 py-1">
+            </h5>
+            <div className="flex justify-between items-center my-1 lg:my-3">
+            <h6 className="text-orange-400 ">
               {career.company}
-            </h4>{" "}
-            <p className="text-sm lg:text-lg font-semibold text-gray-800 py-1">
+            </h6>{" "}
+            <p className="text-gray-500 lg:text-base pe-3">
               {career.date}
-            </p>{" "}
-            <p className="text-sm lg:text-lg font-light text-gray-600 mt-1">
+            </p>{" "}</div>
+            <p className="">
               {career.desc}
             </p>
           </div>

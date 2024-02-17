@@ -30,28 +30,28 @@ const school = [
 
 export const Education = () => {
   return (
-    <div className="lg:min-h-screen text-gray-800 mt-20 lg:mt-0 w-100  pt-24">
+    <div className="lg:min-h-screen mt-20 lg:mt-0 w-100  pt-24">
       <div className="mb-8 lg:mb-20">
-        <span className="text-lg lg:text-3xl text-gray-800">
+        <h5 className="">
           Learn More About Me
-        </span>
-        <h1 className="text-4xl lg:text-7xl text-primary lg:mt-4">
+        </h5>
+        <h2 className="text-primary lg:mt-4">
           Education
-        </h1>
+        </h2>
       </div>
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-20">
         {school.map((school) => (
           <div key={school.subject}>
-            <p className="text-xs lg:text-sm text-gray-500 bg-gray-100 w-fit rounded-full py-1 px-3">
+            <p className="text-xs lg:text-sm bg-gray-100 w-fit rounded-full py-1 px-3">
               {school.date}
             </p>{" "}
             <div className="py-4">
               <Image src={school.image} alt="" width={200} height={200} />
             </div>
-            <h3 className="text-xl lg:text-4xl text-gray-800 ">
+            <h5 className="">
               {school.subject}
-            </h3>
-            <p className="text-sm lg:text-lg text-gray-600 font-light lg:mt-2 mt-1">
+            </h5>
+            <p className="lg:mt-2 mt-1">
               {school.desc}
             </p>
           </div>

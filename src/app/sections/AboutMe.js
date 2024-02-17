@@ -23,14 +23,14 @@ export const AboutMe = () => {
   return (
     <div className="lg:h-screen mt-20 lg:mt-0 w-100 flex pt-24 flex-col lg:flex-row gap-8 lg:gap-20 lg:justify-between items-start">
       <div className="lg:w-[60%]">
-        <span className="text-lg lg:text-3xl text-gray-800">
+        <h5 className="">
           Learn More About Me
-        </span>
-        <h1 className="text-4xl lg:text-7xl text-primary lg:mt-4">
+        </h5>
+        <h2 className="text-primary lg:mt-4">
           1 Year Experience
-        </h1>
+        </h2>
 
-        <p className="text-gray-600 text-base lg:text-lg font-light pt-4 lg:pt-8">
+        <p className="pt-4 lg:pt-8">
           As a recent graduate in software engineering, I bring a year of
           experience to my role, focusing on UX/UI design and front-end
           development. My expertise lies in creating user-centered designs for
@@ -44,13 +44,13 @@ export const AboutMe = () => {
       <div className="lg:w-[40%]">
         {skills.map((skill) => (
           <div key={skill.name} className="mt-4 lg:mt-8">
-            <h3 className="text-gray-800 font-medium text-4xl lg:text-8xl mb-2 lg:mb-4">
+            <h2 className="mb-2 lg:mb-4">
               {skill.ability}
               <span className="text-sm lg:text-xl font-semibold ms-1.5 lg:ms-3">
                 {skill.name}
               </span>
-            </h3>
-            <p className="text-gray-600 text-sm lg:text-lg font-light lg:w-3/4">
+            </h2>
+            <p className="lg:w-3/4">
               {skill.desc}
             </p>
           </div>
